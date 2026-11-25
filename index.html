@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hassan Mahmood | Technology and Business Transformation Leader</title>
+<meta name="description" content="Hassan Mahmood, MBA, CSM, LSSGB. Senior technology and business transformation leader with 20+ years delivering enterprise IT solutions and capital programs across healthcare, energy, logistics and telecom.">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.replace('no-js','js');</script>
+<style>
+  :root{
+    --bg:#000000; --surface:#181818; --surface-2:#1F1F1F; --line:#272727; --line-2:#313131;
+    --text:#FFFFFF; --muted:#A6A6A6; --dim:#7A7A7A; --accent:#E8B04B;
+    --ease:cubic-bezier(0.22,1,0.36,1);
+    --s25:2px; --s50:4px; --s75:8px; --s100:12px; --s200:16px; --s300:24px; --s400:32px;
+    --s500:40px; --s600:48px; --s700:64px; --s800:80px; --s900:96px;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:'Manrope',system-ui,sans-serif;font-size:16px;line-height:24px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3,h4,p{margin:0}
+  ul{margin:0;padding:0;list-style:none}
+  h1,h2,h3,h4{text-wrap:balance}
+  p,li{text-wrap:pretty}
+  :focus-visible{outline:2px solid var(--text);outline-offset:4px;border-radius:8px}
+
+  /* Text styles */
+  .heading-1{font-size:60px;line-height:60px;font-weight:600;letter-spacing:-0.02em}
+  .heading-3{font-size:36px;line-height:40px;font-weight:600;letter-spacing:-0.01em}
+  .heading-4{font-size:30px;line-height:36px;font-weight:600}
+  .heading-6{font-size:20px;line-height:28px;font-weight:600}
+  .title-2{font-size:18px;line-height:28px;font-weight:500}
+  .title-3{font-size:16px;line-height:24px;font-weight:500}
+  .title-4{font-size:14px;line-height:20px;font-weight:500}
+  .body-3{font-size:16px;line-height:24px;font-weight:400}
+  .body-6{font-size:14px;line-height:20px;font-weight:400}
+  .button-md{font-size:16px;line-height:24px;font-weight:600}
+  .button-sm{font-size:14px;line-height:20px;font-weight:600}
+  .caption-1{font-size:14px;line-height:20px;font-weight:500}
+  .caption-3{font-size:12px;line-height:16px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase}
+  .caption-4{font-size:12px;line-height:16px;font-weight:500}
+  .muted{color:var(--muted)}
+  .dim{color:var(--dim)}
+
+  .wrap{max-width:1120px;margin:0 auto;padding:0 var(--s300)}
+  section{padding:var(--s900) 0;scroll-margin-top:var(--s700)}
+  .section-head{display:flex;flex-direction:column;gap:var(--s100);margin-bottom:var(--s600);max-width:680px}
+  .eyebrow{color:var(--dim)}
+
+  .skip{position:absolute;left:var(--s200);top:-64px;background:var(--text);color:var(--bg);padding:var(--s75) var(--s100);border-radius:8px;z-index:100;transition:transform .3s var(--ease)}
+  .skip:focus{transform:translateY(80px)}
+
+  /* Buttons */
+  .btn{display:inline-flex;align-items:center;gap:var(--s75);padding:var(--s75) var(--s100);border-radius:9999px;border:1px solid transparent;transition:transform .5s var(--ease),background-color .3s var(--ease),border-color .3s var(--ease),color .3s var(--ease);white-space:nowrap}
+  .btn:active{transform:scale(0.98)}
+  .btn-primary{background:var(--text);color:var(--bg)}
+  .btn-primary:hover{background:#D9D9D9;transform:translateY(-2px)}
+  .btn-ghost{border-color:var(--line-2);color:var(--text)}
+  .btn-ghost:hover{background:var(--surface-2);border-color:#4A4A4A;transform:translateY(-2px)}
+  .btn svg{width:16px;height:16px;flex:none;transition:transform .5s var(--ease)}
+  .btn:hover svg{transform:translateX(2px)}
+  .btn-ghost.dl:hover svg{transform:translateY(2px)}
+  .btn-lg{padding:var(--s100) var(--s300)}
+
+  /* Nav */
+  .nav{position:fixed;top:var(--s200);left:50%;transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:var(--s300);padding:var(--s75) var(--s75) var(--s75) var(--s300);background:rgba(24,24,24,0.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--line);border-radius:9999px;max-width:calc(100% - 32px)}
+  .nav .brand{white-space:nowrap}
+  .nav ul{display:flex;gap:var(--s50)}
+  .nav ul a{display:block;padding:var(--s50) var(--s100);border-radius:9999px;color:var(--muted);transition:color .3s var(--ease),background-color .3s var(--ease)}
+  .nav ul a:hover{color:var(--text)}
+  .nav ul a[aria-current="true"]{color:var(--text);background:var(--surface-2)}
+  .menu-btn{display:none;width:40px;height:40px;border-radius:9999px;border:1px solid var(--line-2);background:transparent;color:var(--text);cursor:pointer;position:relative}
+  .menu-btn span{position:absolute;left:12px;width:16px;height:2px;border-radius:2px;background:currentColor;transition:transform .5s var(--ease)}
+  .menu-btn span:nth-child(1){top:15px}
+  .menu-btn span:nth-child(2){top:23px}
+  .menu-open .menu-btn span:nth-child(1){transform:translateY(4px) rotate(45deg)}
+  .menu-open .menu-btn span:nth-child(2){transform:translateY(-4px) rotate(-45deg)}
+  .mobile-menu{position:fixed;inset:0;z-index:40;background:rgba(0,0,0,0.92);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);padding:120px var(--s300) var(--s400);display:flex;flex-direction:column;gap:var(--s200);opacity:0;pointer-events:none;transition:opacity .5s var(--ease)}
+  .menu-open .mobile-menu{opacity:1;pointer-events:auto}
+  .mobile-menu a{opacity:0;transform:translateY(24px);transition:opacity .5s var(--ease),transform .5s var(--ease)}
+  .menu-open .mobile-menu a{opacity:1;transform:none}
+  .mobile-menu a.heading-4{color:var(--text)}
+  .mobile-menu .btn{align-self:flex-start;margin-top:var(--s300)}
+
+  /* Hero */
+  .hero{padding-top:160px;padding-bottom:var(--s900)}
+  .hero-grid{display:grid;grid-template-columns:1fr;gap:var(--s700);align-items:center}
+  .hero-copy{display:flex;flex-direction:column;gap:var(--s300)}
+  .hero h1{max-width:680px;background:linear-gradient(90deg,#FFFFFF,#9B9B9B);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero .sub{max-width:680px;font-size:18px;line-height:28px}
+  .badge{display:inline-flex;align-items:center;gap:var(--s75);align-self:flex-start;padding:var(--s50) var(--s100);border:1px solid var(--line-2);border-radius:9999px;color:var(--muted)}
+  .dot{width:8px;height:8px;border-radius:9999px;background:#5BD08A;flex:none}
+  .cta-row{display:flex;flex-wrap:wrap;gap:var(--s100)}
+  .photo{position:relative;width:180px;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--surface);aspect-ratio:4/5}
+  .photo img{width:100%;height:100%;object-fit:cover;object-position:center 20%;transition:transform .5s var(--ease)}
+  .photo:hover img{transform:scale(1.03)}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s200);margin-top:var(--s800)}
+  .stat{padding:var(--s300);border:1px solid var(--line);border-radius:16px;background:var(--surface);display:flex;flex-direction:column;gap:var(--s75);transition:transform .5s var(--ease),border-color .3s var(--ease)}
+  .stat:hover{transform:translateY(-4px);border-color:var(--line-2)}
+
+  /* About */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s700)}
+  .about-grid .section-head{margin-bottom:0}
+  .about-side{display:flex;flex-direction:column;gap:var(--s400)}
+  .about-text{display:flex;flex-direction:column;gap:var(--s300)}
+  .facts{display:flex;flex-direction:column;gap:var(--s100)}
+  .fact{display:flex;gap:var(--s200);padding:var(--s200) var(--s300);border:1px solid var(--line);border-radius:16px;background:var(--surface)}
+  .fact .caption-3{min-width:96px;padding-top:2px}
+
+  /* Philosophy / tagline reveal */
+  .tagline{padding:var(--s900) 0}
+  .tagline p{max-width:880px}
+  .tagline .w{opacity:0.3;transition:opacity .6s var(--ease)}
+  .tagline .w.on{opacity:1}
+  .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s200);margin-top:var(--s700)}
+  .card{padding:var(--s400);border:1px solid var(--line);border-radius:16px;background:var(--surface);display:flex;flex-direction:column;gap:var(--s100);transition:transform .5s var(--ease),border-color .3s var(--ease),background-color .3s var(--ease)}
+  .card:hover{transform:translateY(-4px);border-color:var(--line-2);background:var(--surface-2)}
+  .num{color:var(--dim)}
+  .quote{margin-top:var(--s600);padding:var(--s400);border:1px solid var(--line);border-radius:16px;max-width:880px}
+
+  /* Experience */
+  .jobs{display:flex;flex-direction:column;gap:var(--s200)}
+  .job{display:grid;grid-template-columns:200px 1fr;gap:var(--s400);padding:var(--s400);border:1px solid var(--line);border-radius:16px;background:var(--surface);transition:transform .5s var(--ease),border-color .3s var(--ease)}
+  .job:hover{transform:translateY(-4px);border-color:var(--line-2)}
+  .job-meta{display:flex;flex-direction:column;gap:var(--s50)}
+  .job-body{display:flex;flex-direction:column;gap:var(--s100)}
+  .role + .role{margin-top:var(--s200)}
+  .points{display:flex;flex-direction:column;gap:var(--s75);margin-top:var(--s75)}
+  .points li{position:relative;padding-left:var(--s300);color:var(--muted)}
+  .points li::before{content:"";position:absolute;left:4px;top:10px;width:6px;height:6px;border-radius:9999px;background:var(--line-2)}
+  .earlier{display:flex;flex-wrap:wrap;gap:var(--s100) var(--s400);padding:var(--s300) var(--s400);border:1px solid var(--line);border-radius:16px}
+
+  /* Projects */
+  .group-label{margin:var(--s600) 0 var(--s200)}
+  .group-label:first-of-type{margin-top:0}
+  .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s200)}
+  .project{padding:var(--s300);border:1px solid var(--line);border-radius:16px;background:var(--surface);display:flex;flex-direction:column;gap:var(--s100);transition:transform .5s var(--ease),border-color .3s var(--ease),background-color .3s var(--ease)}
+  .project:hover{transform:translateY(-4px);border-color:var(--line-2);background:var(--surface-2)}
+  .project .tag{color:var(--dim)}
+  .project .result{margin-top:auto;padding-top:var(--s200);display:flex;flex-wrap:wrap;gap:var(--s75)}
+  .chip{display:inline-flex;padding:var(--s25) var(--s100);border-radius:9999px;border:1px solid var(--line-2);color:var(--text);background:var(--bg)}
+
+  /* Certifications */
+  .cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s200)}
+  .cert{display:flex;align-items:flex-start;gap:var(--s200);padding:var(--s300);border:1px solid var(--line);border-radius:16px;background:var(--surface);transition:transform .5s var(--ease),border-color .3s var(--ease)}
+  .cert:hover{transform:translateY(-4px);border-color:var(--line-2)}
+  .cert svg{width:24px;height:24px;flex:none;color:var(--muted)}
+  .cert.progress{border-color:rgba(232,176,75,0.35)}
+  .cert.progress svg{color:var(--accent)}
+  .pill-progress{display:inline-flex;margin-top:var(--s75);padding:var(--s25) var(--s75);border-radius:9999px;color:var(--accent);border:1px solid rgba(232,176,75,0.4)}
+  .cert-body{display:flex;flex-direction:column;gap:var(--s25)}
+  .edu{display:grid;grid-template-columns:1fr 1fr;gap:var(--s200);margin-top:var(--s200)}
+
+  /* Skills */
+  .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s200)}
+  .skill-group{padding:var(--s300);border:1px solid var(--line);border-radius:16px;display:flex;flex-direction:column;gap:var(--s200)}
+  .chips{display:flex;flex-wrap:wrap;gap:var(--s75)}
+  .chips .chip{background:var(--surface);transition:background-color .3s var(--ease),border-color .3s var(--ease)}
+  .chips .chip:hover{background:var(--surface-2);border-color:#4A4A4A}
+
+  /* Contact */
+  .contact-card{padding:var(--s800) var(--s600);border:1px solid var(--line);border-radius:24px;background:var(--surface);display:flex;flex-direction:column;align-items:center;text-align:center;gap:var(--s300)}
+  .contact-card h2{max-width:680px}
+  .contact-card p{max-width:560px}
+  .contact-links{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--s100)}
+  footer{padding:var(--s400) 0 var(--s600)}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:var(--s200)}
+
+  /* Scroll reveals */
+  .js .reveal{opacity:0;transform:translateY(32px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+  .js .reveal.in{opacity:1;transform:none}
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    *,*::before,*::after{transition-duration:.3s !important}
+    .js .reveal{transform:none}
+    .mobile-menu a{transform:none}
+    .tagline .w{opacity:1}
+    .btn:hover,.card:hover,.project:hover,.stat:hover,.job:hover,.cert:hover{transform:none}
+    .photo:hover img{transform:none}
+  }
+
+  @media (max-width: 960px){
+    .hero-grid{grid-template-columns:1fr}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .about-grid{grid-template-columns:1fr;gap:var(--s400)}
+    .principles,.projects,.cert-grid{grid-template-columns:1fr 1fr}
+    .job{grid-template-columns:1fr;gap:var(--s200)}
+  }
+  @media (max-width: 860px){
+    .nav ul,.nav .btn{display:none}
+    .menu-btn{display:block}
+    .nav{left:var(--s200);right:var(--s200);transform:none;justify-content:space-between;max-width:none}
+  }
+  @media (max-width: 640px){
+    .wrap{padding:0 var(--s200)}
+    section{padding:var(--s700) 0}
+    .hero{padding-top:120px;padding-bottom:var(--s700)}
+    .heading-1{font-size:36px;line-height:40px}
+    .heading-3{font-size:30px;line-height:36px}
+    .hero .sub{font-size:16px;line-height:24px}
+    .stats{margin-top:var(--s600)}
+    .stat{padding:var(--s200)}
+    .principles,.projects,.cert-grid,.skills,.edu{grid-template-columns:1fr}
+    .card,.job{padding:var(--s300)}
+    .fact{flex-direction:column;gap:var(--s50)}
+    .contact-card{padding:var(--s600) var(--s300)}
+    .hero br,.tagline br,.contact-card br{display:none}
+  }
+</style>
+</head>
+<body>
+<a class="skip button-sm" href="#main">Skip to content</a>
+
+<nav class="nav" aria-label="Main">
+  <a href="#top" class="brand title-3">Hassan Mahmood</a>
+  <ul class="title-4">
+    <li><a href="#about">About</a></li>
+    <li><a href="#philosophy">Philosophy</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="btn btn-primary button-sm" href="mailto:mmahmo1@gmail.com">Email me</a>
+  <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <a class="heading-4" href="#about">About</a>
+  <a class="heading-4" href="#philosophy">Philosophy</a>
+  <a class="heading-4" href="#experience">Experience</a>
+  <a class="heading-4" href="#projects">Projects</a>
+  <a class="heading-4" href="#certifications">Certifications</a>
+  <a class="heading-4" href="#contact">Contact</a>
+  <a class="btn btn-primary button-md" href="mailto:mmahmo1@gmail.com">Email me</a>
+</div>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy reveal">
+        <span class="badge caption-1"><span class="dot" aria-hidden="true"></span>MBA, CSM, LSSGB · Houston, TX</span>
+        <h1 class="heading-1">Turning strategic ideas<br> into measurable<br> business outcomes</h1>
+        <p class="sub muted">Senior technology and business transformation leader with 20+ years delivering enterprise IT solutions and capital programs across healthcare, energy, logistics and telecom.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary button-md btn-lg" href="mailto:mmahmo1@gmail.com">Email me
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="btn btn-ghost dl button-md btn-lg" href="resume.pdf" download="Hassan-Mahmood-Resume.pdf">Download resume
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2v9M4 7l4 4 4-4M3 14h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat reveal"><span class="heading-4">$100M+</span><span class="body-6 muted">in programs and projects managed</span></div>
+      <div class="stat reveal"><span class="heading-4">95%</span><span class="body-6 muted">of projects delivered on time and within budget</span></div>
+      <div class="stat reveal"><span class="heading-4">35%</span><span class="body-6 muted">gain in operational efficiency through digital transformation</span></div>
+      <div class="stat reveal"><span class="heading-4">30</span><span class="body-6 muted">people mentored, seven promoted into management</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-side reveal">
+        <div class="section-head">
+          <span class="caption-3 eyebrow">About</span>
+          <h2 class="heading-3">Where business strategy, technology and people meet</h2>
+        </div>
+        <div class="photo">
+          <img src="photo.jpg" alt="Portrait of Hassan Mahmood" width="715" height="1003">
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <p class="body-3 muted">I'm an entrepreneur and business leader with over 20 years of experience helping organizations navigate complex challenges, transform operations, and turn strategic ideas into measurable business outcomes using technology solutions.</p>
+        <p class="body-3 muted">My experience spans energy, healthcare, insurance, telecommunications and professional services. I've led initiatives involving enterprise applications, digital transformation, business process optimization, systems integration, technology governance and organizational change.</p>
+        <p class="body-3 muted">What has consistently defined my approach is the ability to understand the bigger picture while staying grounded in execution. I enjoy bringing structure to complex situations, connecting people with different perspectives, building consensus, and helping teams move from uncertainty to meaningful progress.</p>
+        <div class="facts">
+          <div class="fact"><span class="caption-3 dim">Now</span><span class="body-6">Director, IT Programs at Indigo Beam (Airiam)</span></div>
+          <div class="fact"><span class="caption-3 dim">Industries</span><span class="body-6">Healthcare and health insurance, energy and midstream oil &amp; gas, logistics, telecommunications</span></div>
+          <div class="fact"><span class="caption-3 dim">Work</span><span class="body-6">Available for remote work or on site in Houston and Dallas, TX. Authorized to work in the US and Canada. TWIC holder.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section id="philosophy" class="tagline">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="caption-3 eyebrow">Philosophy</span>
+    </div>
+    <p class="heading-1 reveal-words">Build trust.<br> Bring clarity to complexity.<br> Empower people.</p>
+
+    <div class="principles">
+      <article class="card reveal">
+        <span class="caption-3 num">01</span>
+        <h3 class="heading-6">Build trust</h3>
+        <p class="body-6 muted">I listen first, understand the underlying issues, and earn people's trust before creating structure, accountability and momentum. I don't believe in creating unnecessary friction to demonstrate authority.</p>
+      </article>
+      <article class="card reveal">
+        <span class="caption-3 num">02</span>
+        <h3 class="heading-6">Bring clarity to complexity</h3>
+        <p class="body-6 muted">I'm often brought in where there are competing priorities, difficult stakeholders, or projects that need direction. I bring structure so teams can move from uncertainty to meaningful progress.</p>
+      </article>
+      <article class="card reveal">
+        <span class="caption-3 num">03</span>
+        <h3 class="heading-6">Empower people</h3>
+        <p class="body-6 muted">My management style is collaborative and inclusive. I build cross functional buy in and lead through influence. I've mentored 30 employees, and seven of them were promoted into management roles.</p>
+      </article>
+    </div>
+
+    <blockquote class="quote reveal" style="margin-left:0;margin-right:0">
+      <p class="title-2">“Successful transformation is rarely just about technology. It's about understanding business needs, earning people's trust, challenging conventional thinking, and creating an environment where people can work together toward a common goal.”</p>
+    </blockquote>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="caption-3 eyebrow">Experience</span>
+      <h2 class="heading-3">20+ years leading enterprise technology programs</h2>
+    </div>
+    <div class="jobs">
+      <article class="job reveal">
+        <div class="job-meta"><span class="caption-4 dim">2025 – Present</span><span class="title-3">Indigo Beam (Airiam)</span><span class="body-6 dim">Houston, TX</span></div>
+        <div class="job-body">
+          <h3 class="heading-6">Director, IT Programs</h3>
+          <ul class="points body-6">
+            <li>Lead a portfolio of enterprise initiatives including custom application development, ERPs, AI tools, and Workday and Intacct integration across multiple client engagements.</li>
+            <li>Provide program insights to the CEO and VP through dashboards, portfolio health metrics, budget variance and investment planning.</li>
+            <li>Support client acquisition strategy through technology due diligence and IT assessments of prospective companies.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="job reveal">
+        <div class="job-meta"><span class="caption-4 dim">2021 – 2025</span><span class="title-3">Digineox Consulting</span><span class="body-6 dim">Houston, TX</span></div>
+        <div class="job-body">
+          <h3 class="heading-6">Senior Manager, Digital Transformation</h3>
+          <ul class="points body-6">
+            <li>Directed enterprise IT and OT initiatives for midstream oil &amp; gas clients: terminal operations, enterprise asset management and ERP modernization.</li>
+            <li>Integrated Hexagon EAM with SAP and Coupa, reducing corrective work orders by 20%.</li>
+            <li>Automated railcar arrivals and departures through the Union Pacific API, reducing planner effort by 35%.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="job reveal">
+        <div class="job-meta"><span class="caption-4 dim">2013 – 2021</span><span class="title-3">Alberta Blue Cross</span><span class="body-6 dim">Edmonton, AB</span></div>
+        <div class="job-body">
+          <div class="role">
+            <h3 class="heading-6">Manager, Business Support</h3>
+            <span class="caption-4 dim">2018 – 2021</span>
+            <ul class="points body-6">
+              <li>Led healthcare technology initiatives across health, dental, drug, life and benefits platforms with a team of 30 business analysts, QA analysts, developers and architects.</li>
+              <li>Served as Business Relationship Manager to senior executives across the Health, Dental, Pharmacy and Life business units.</li>
+            </ul>
+          </div>
+          <div class="role">
+            <h3 class="title-2">Manager, Enterprise Services Business &amp; Applications</h3>
+            <span class="caption-4 dim">2015 – 2018</span>
+            <ul class="points body-6">
+              <li>Managed enterprise Sales and Finance application portfolios supporting a $125M Oracle ERP implementation.</li>
+            </ul>
+          </div>
+          <div class="role">
+            <h3 class="title-2">Senior Business Analyst</h3>
+            <span class="caption-4 dim">2013 – 2015</span>
+            <ul class="points body-6">
+              <li>Delivered process improvements that reduced software production costs by 20% and software defects by 30%.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <article class="job reveal">
+        <div class="job-meta"><span class="caption-4 dim">2005 – 2013</span><span class="title-3">Virtual Communications</span><span class="body-6 dim">Murphy, TX</span></div>
+        <div class="job-body">
+          <h3 class="heading-6">Director and Program Manager</h3>
+          <ul class="points body-6">
+            <li>Established a call center for major telecom providers, executive concierge services and medical transcription for doctors.</li>
+            <li>Developed digital health and telemedicine solutions with hospitals, including remote consultations and live surgical broadcasts.</li>
+            <li>Provided software development and IT consulting for clients including Microsoft, Dell, LG and Tetra Pak, through marketing and technology partners.</li>
+          </ul>
+        </div>
+      </article>
+      <div class="earlier reveal">
+        <span class="caption-3 dim">Earlier</span>
+        <span class="body-6 muted">T-Mobile Franchise Owner, Cell Phones Etc. · 2002 – 2004</span>
+        <span class="body-6 muted">CRM Consultant, PricewaterhouseCoopers LLP · 1998 – 2001</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="caption-3 eyebrow">Projects</span>
+      <h2 class="heading-3">Selected projects and results</h2>
+    </div>
+
+    <h3 class="caption-3 dim group-label reveal">Energy and midstream oil &amp; gas</h3>
+    <div class="projects">
+      <article class="project reveal">
+        <span class="caption-4 tag">Enterprise asset management</span>
+        <h4 class="title-2">Hexagon EAM for a bulk liquid chemical terminal</h4>
+        <p class="body-6 muted">Implemented the full maintenance lifecycle: asset hierarchy, work requests, planning and scheduling, purchasing and MRO inventory. Integrated with SAP for financials and Coupa for procurement, with predictive analytics moving work from reactive to planned.</p>
+        <div class="result"><span class="chip caption-4">20% fewer corrective work orders</span><span class="chip caption-4">MTBF 1,000 to 1,500 hrs</span><span class="chip caption-4">15% lower MRO spend</span></div>
+      </article>
+      <article class="project reveal">
+        <span class="caption-4 tag">Terminal automation</span>
+        <h4 class="title-2">Integrated rail, truck and marine scheduling</h4>
+        <p class="body-6 muted">Integrated SCADA/HMI field data with SAP and Honeywell Terminal Manager for one source of truth on tank levels and movements. Automated railcar tracking through Union Pacific's APIs so arrivals and departures flowed straight into planning.</p>
+        <div class="result"><span class="chip caption-4">35% less planner effort</span><span class="chip caption-4">Fewer data entry errors</span></div>
+      </article>
+      <article class="project reveal">
+        <span class="caption-4 tag">Field operations</span>
+        <h4 class="title-2">Paperless rail and marine operations</h4>
+        <p class="body-6 muted">Deployed Class I Division 2 certified tablets so operators could confirm railcar spotting, complete inspections and submit work requests from hazardous areas. Supported by a structured change management program.</p>
+        <div class="result"><span class="chip caption-4">20% faster railcar spotting</span><span class="chip caption-4">90% user satisfaction</span></div>
+      </article>
+    </div>
+
+    <h3 class="caption-3 dim group-label reveal">Healthcare and health insurance</h3>
+    <div class="projects">
+      <article class="project reveal">
+        <span class="caption-4 tag">Public health</span>
+        <h4 class="title-2">Alberta COVID-19 pharmacy immunization program</h4>
+        <p class="body-6 muted">Stood up the government led vaccination program in under two weeks at the start of the pandemic, including pharmacy enrolment and direct bill claiming through real time adjudication.</p>
+        <div class="result"><span class="chip caption-4">Live in under two weeks</span><span class="chip caption-4">259 pharmacies, 107 communities</span></div>
+      </article>
+      <article class="project reveal">
+        <span class="caption-4 tag">Benefits platform</span>
+        <h4 class="title-2">Flex benefits application redesign</h4>
+        <p class="body-6 muted">Redesigned the benefit selection tool into a simple, personalized, mobile friendly experience. Cleaner enrolment data improved the accuracy of eligibility and plan selections.</p>
+        <div class="result"><span class="chip caption-4">+$10M annual revenue</span><span class="chip caption-4">Fewer pending claims</span></div>
+      </article>
+      <article class="project reveal">
+        <span class="caption-4 tag">Customer experience</span>
+        <h4 class="title-2">Member benefits app revamp</h4>
+        <p class="body-6 muted">Brought the Voice of the Customer into the app through journey mapping and scorecards, adding claim submission, receipt upload by photo, biometric sign in and digital ID cards.</p>
+        <div class="result"><span class="chip caption-4">Rating 2.5 to 4.5 stars</span></div>
+      </article>
+      <article class="project reveal">
+        <span class="caption-4 tag">Provider portal</span>
+        <h4 class="title-2">Alberta Aids to Daily Living provider onboarding</h4>
+        <p class="body-6 muted">Moved every authorizer, specialty assessor, supplier and vendor onto a custom online provider portal for eligibility checks, authorizations and claims in one place.</p>
+        <div class="result"><span class="chip caption-4">100% electronic onboarding</span></div>
+      </article>
+      <article class="project reveal">
+        <span class="caption-4 tag">Enterprise systems</span>
+        <h4 class="title-2">$125M Oracle administration system</h4>
+        <p class="body-6 muted">Managed the Sales and Finance application portfolios supporting the organization's largest ever project: replacing its legacy administration platform with Oracle.</p>
+        <div class="result"><span class="chip caption-4">$125M program</span></div>
+      </article>
+      <article class="project reveal">
+        <span class="caption-4 tag">Claims adjudication</span>
+        <h4 class="title-2">Custom claims engine for ASEBP</h4>
+        <p class="body-6 muted">Customized the healthcare claims adjudication engine for the Alberta School Employee Benefit Plan, applying its own plan rules so members get a personalized experience.</p>
+        <div class="result"><span class="chip caption-4">Real time direct billing</span></div>
+      </article>
+    </div>
+
+    <h3 class="caption-3 dim group-label reveal">Telecom and digital health</h3>
+    <div class="projects">
+      <article class="project reveal">
+        <span class="caption-4 tag">Telemedicine</span>
+        <h4 class="title-2">Digital health with hospitals</h4>
+        <p class="body-6 muted">Developed remote consultation services, interactive medical education programs and live surgical broadcasts with hospitals and medical organizations.</p>
+        <div class="result"><span class="chip caption-4">Remote consultations</span><span class="chip caption-4">Live surgical broadcasts</span></div>
+      </article>
+      <article class="project reveal">
+        <span class="caption-4 tag">Patient access</span>
+        <h4 class="title-2">IVR health hotlines</h4>
+        <p class="body-6 muted">Established toll free health hotlines with 24/7 call routing and escalation, plus universal access numbers connecting patients to physicians across multiple locations.</p>
+        <div class="result"><span class="chip caption-4">24/7 routing</span></div>
+      </article>
+      <article class="project reveal">
+        <span class="caption-4 tag">Venture</span>
+        <h4 class="title-2">Sustainability web portal</h4>
+        <p class="body-6 muted">Jointly developed a sustainability focused web portal for the recycling industry.</p>
+        <div class="result"><span class="chip caption-4">Selected for TechCrunch50, 2009</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="caption-3 eyebrow">Certifications</span>
+      <h2 class="heading-3">Certifications and education</h2>
+    </div>
+    <div class="cert-grid">
+      <div class="cert progress reveal">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div class="cert-body"><span class="title-3">Cognitive Project Management for AI (CPMAI)</span><span class="body-6 dim">PMI</span><span class="pill-progress caption-4">In progress</span></div>
+      </div>
+      <div class="cert progress reveal">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div class="cert-body"><span class="title-3">FAA Part 107 Remote Pilot</span><span class="body-6 dim">Federal Aviation Administration</span><span class="pill-progress caption-4">In progress</span></div>
+      </div>
+      <div class="cert reveal">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M8 12.5l2.5 2.5L16 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="cert-body"><span class="title-3">Certified Scrum Master (CSM)</span></div>
+      </div>
+      <div class="cert reveal">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M8 12.5l2.5 2.5L16 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="cert-body"><span class="title-3">Lean Six Sigma Green Belt (LSSGB)</span></div>
+      </div>
+      <div class="cert reveal">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M8 12.5l2.5 2.5L16 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="cert-body"><span class="title-3">Disciplined Agile</span><span class="body-6 dim">PMI</span></div>
+      </div>
+      <div class="cert reveal">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M8 12.5l2.5 2.5L16 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="cert-body"><span class="title-3">Generative AI for Project Managers</span><span class="body-6 dim">PMI</span></div>
+      </div>
+      <div class="cert reveal">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M8 12.5l2.5 2.5L16 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="cert-body"><span class="title-3">Cognitive Project Management using AI</span><span class="body-6 dim">PMI</span></div>
+      </div>
+      <div class="cert reveal">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M8 12.5l2.5 2.5L16 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="cert-body"><span class="title-3">Data Landscape for AI</span><span class="body-6 dim">PMI</span></div>
+      </div>
+      <div class="cert reveal">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M8 12.5l2.5 2.5L16 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="cert-body"><span class="title-3">Azure AI Fundamentals (AI 900)</span><span class="body-6 dim">Microsoft</span></div>
+      </div>
+      <div class="cert reveal">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M8 12.5l2.5 2.5L16 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="cert-body"><span class="title-3">Business Intelligence &amp; Analytics</span></div>
+      </div>
+    </div>
+    <div class="edu">
+      <div class="cert reveal">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5L2 9z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M6 11v5c0 1 2.7 3 6 3s6-2 6-3v-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div class="cert-body"><span class="title-3">MBA, Entrepreneurship &amp; Digital Marketing</span><span class="body-6 dim">University of Illinois at Urbana Champaign · 2022</span></div>
+      </div>
+      <div class="cert reveal">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5L2 9z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M6 11v5c0 1 2.7 3 6 3s6-2 6-3v-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div class="cert-body"><span class="title-3">BS, Management Information Systems</span><span class="body-6 dim">University of Illinois at Chicago · 1997</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="caption-3 eyebrow">Skills</span>
+      <h2 class="heading-3">Core competencies</h2>
+    </div>
+    <div class="skills">
+      <div class="skill-group reveal">
+        <h3 class="title-3">Program and portfolio management</h3>
+        <div class="chips caption-4"><span class="chip">Capital program management</span><span class="chip">PMO governance</span><span class="chip">Portfolio planning and prioritization</span><span class="chip">Scope, schedule, budget and risk</span><span class="chip">Stage gate reviews</span><span class="chip">Agile / Scrum</span><span class="chip">Waterfall</span></div>
+      </div>
+      <div class="skill-group reveal">
+        <h3 class="title-3">Leadership and delivery</h3>
+        <div class="chips caption-4"><span class="chip">Cross functional team leadership</span><span class="chip">Executive stakeholder engagement</span><span class="chip">Organizational change management</span><span class="chip">Vendor management</span><span class="chip">Delivery assurance</span><span class="chip">Strategic planning</span></div>
+      </div>
+      <div class="skill-group reveal">
+        <h3 class="title-3">Business and operational excellence</h3>
+        <div class="chips caption-4"><span class="chip">Continuous improvement</span><span class="chip">Business analysis and requirements</span><span class="chip">Operational excellence</span><span class="chip">KPI development</span><span class="chip">Data analysis</span><span class="chip">Executive dashboards and reporting</span></div>
+      </div>
+      <div class="skill-group reveal">
+        <h3 class="title-3">Enterprise platforms and tools</h3>
+        <div class="chips caption-4"><span class="chip">SAP</span><span class="chip">Oracle</span><span class="chip">Hexagon EAM</span><span class="chip">Honeywell Terminal Manager</span><span class="chip">Coupa</span><span class="chip">NetSuite</span><span class="chip">Workday</span><span class="chip">SCADA/HMI</span><span class="chip">Electronic Medical Records</span><span class="chip">Azure DevOps</span><span class="chip">Jira</span><span class="chip">Tableau</span><span class="chip">MicroStrategy</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-card reveal">
+      <span class="caption-3 eyebrow">Contact</span>
+      <h2 class="heading-3">Let's talk about your<br> next transformation</h2>
+      <p class="body-3 muted">I'm open to leadership roles in IT programs, portfolio management and digital transformation. Remote, or on site in Houston and Dallas.</p>
+      <div class="contact-links">
+        <a class="btn btn-primary button-md btn-lg" href="mailto:mmahmo1@gmail.com">mmahmo1@gmail.com
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn-ghost button-md btn-lg" href="https://www.linkedin.com/in/mmahmo1/" target="_blank" rel="noopener">LinkedIn
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn-ghost dl button-md btn-lg" href="resume.pdf" download="Hassan-Mahmood-Resume.pdf">Download resume
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2v9M4 7l4 4 4-4M3 14h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="body-6 dim">© 2026 Hassan Mahmood</span>
+    <a class="body-6 dim" href="#top">Back to top</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Scroll reveals (once each)
+  var els = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){ io.observe(el); });
+  } else { els.forEach(function(el){ el.classList.add('in'); }); }
+
+  // Tagline: words light up one at a time
+  var tag = document.querySelector('.reveal-words');
+  if (tag) {
+    var html = tag.innerHTML.split(/(<br>)/).map(function(part){
+      if (part === '<br>') return part;
+      return part.split(/(\s+)/).map(function(w){ return /\S/.test(w) ? '<span class="w">'+w+'</span>' : w; }).join('');
+    }).join('');
+    tag.innerHTML = html;
+    var words = tag.querySelectorAll('.w');
+    if (reduce) { words.forEach(function(w){ w.classList.add('on'); }); }
+    else {
+      var ticking = false;
+      var update = function(){
+        var line = window.innerHeight * 0.7;
+        words.forEach(function(w){ if (w.getBoundingClientRect().top < line) w.classList.add('on'); });
+        ticking = false;
+      };
+      window.addEventListener('scroll', function(){ if (!ticking){ ticking = true; requestAnimationFrame(update); } }, {passive:true});
+      update();
+    }
+  }
+
+  // Current section in nav
+  var links = document.querySelectorAll('.nav ul a');
+  if ('IntersectionObserver' in window) {
+    var map = {};
+    links.forEach(function(a){ map[a.getAttribute('href').slice(1)] = a; });
+    var so = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) {
+          links.forEach(function(a){ a.removeAttribute('aria-current'); });
+          var a = map[e.target.id]; if (a) a.setAttribute('aria-current','true');
+        }
+      });
+    }, {rootMargin:'-45% 0px -50% 0px'});
+    document.querySelectorAll('main section[id]').forEach(function(s){ so.observe(s); });
+  }
+
+  // Mobile menu
+  var btn = document.querySelector('.menu-btn');
+  var menu = document.getElementById('mobile-menu');
+  var items = menu.querySelectorAll('a');
+  function setMenu(open){
+    document.body.classList.toggle('menu-open', open);
+    btn.setAttribute('aria-expanded', open);
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    menu.setAttribute('aria-hidden', !open);
+    document.body.style.overflow = open ? 'hidden' : '';
+    var step = Math.min(60, 400 / items.length);
+    items.forEach(function(a, i){ a.style.transitionDelay = open ? (i * step) + 'ms' : '0ms'; });
+  }
+  btn.addEventListener('click', function(){ setMenu(!document.body.classList.contains('menu-open')); });
+  items.forEach(function(a){ a.addEventListener('click', function(){ setMenu(false); }); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') setMenu(false); });
+})();
+</script>
+</body>
+</html>
