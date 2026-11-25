@@ -133,7 +133,12 @@
   .job:hover{transform:translateY(-4px);border-color:var(--line-2)}
   .job-meta{display:flex;flex-direction:column;gap:var(--s50)}
   .job-body{display:flex;flex-direction:column;gap:var(--s100)}
-  .role + .role{margin-top:var(--s200)}
+  .role{display:flex;flex-direction:column;gap:var(--s75)}
+  .role + .role{margin-top:var(--s500)}
+  .blurb{display:flex;flex-direction:column;gap:var(--s100);margin-top:var(--s75)}
+  .job-skills{margin-top:var(--s200)}
+  .job-skills .chip{background:var(--bg);transition:background-color .3s var(--ease),border-color .3s var(--ease)}
+  .job-skills .chip:hover{background:var(--surface-2);border-color:#4A4A4A}
   .points{display:flex;flex-direction:column;gap:var(--s75);margin-top:var(--s75)}
   .points li{position:relative;padding-left:var(--s300);color:var(--muted)}
   .points li::before{content:"";position:absolute;left:4px;top:10px;width:6px;height:6px;border-radius:9999px;background:var(--line-2)}
@@ -338,70 +343,95 @@
     </div>
     <div class="jobs">
       <article class="job reveal">
-        <div class="job-meta"><span class="caption-4 dim">2025 – Present</span><span class="title-3">Indigo Beam (Airiam)</span><span class="body-6 dim">Houston, TX</span></div>
+        <div class="job-meta"><span class="caption-4 dim">Jul 2025 – Present</span><span class="title-3">Indigo Beam Consulting</span><span class="body-6 dim">Houston, TX · Hybrid</span></div>
         <div class="job-body">
           <h3 class="heading-6">Director, IT Programs</h3>
-          <ul class="points body-6">
-            <li>Lead a portfolio of enterprise initiatives including custom application development, ERPs, AI tools, and Workday and Intacct integration across multiple client engagements.</li>
-            <li>Provide program insights to the CEO and VP through dashboards, portfolio health metrics, budget variance and investment planning.</li>
-            <li>Support client acquisition strategy through technology due diligence and IT assessments of prospective companies.</li>
-          </ul>
+          <div class="blurb body-6 muted">
+            <p>I provide strategic technology leadership and program management advisory across a diverse portfolio of client engagements involving custom and ERP applications, serving as a trusted partner to the C suite and executive leadership. My focus is on aligning technology initiatives with business strategy, investment priorities and measurable organizational outcomes, with stakeholder management at the center of my role.</p>
+            <p>I direct a portfolio of enterprise digital initiatives spanning ERP, custom application development, AI and operational technology, and provide data driven insights to the CEO and VP that shape strategic decisions and program prioritization. With client executives, I prioritize technology investments based on business value, delivery capacity and financial constraints, and I establish governance through portfolio reviews, stage gate approvals, RAID management, change governance and executive steering committee reporting.</p>
+            <p>I lead vendor evaluation, software selection and contract negotiations, then hold partners accountable through scope negotiation, scorecards and SLAs. I oversee multidisciplinary teams of developers, architects, QA analysts, business analysts and functional leads, leading Agile delivery in a CI/CD pipeline with Azure DevOps. As the primary liaison to executive stakeholders, I deliver governance reporting, risk mitigation and escalation management, working with clients as a partner rather than a provider.</p>
+          </div>
+          <div class="chips caption-4 job-skills"><span class="chip">Portfolio management</span><span class="chip">Executive advisory</span><span class="chip">IT governance</span><span class="chip">Stage gate and RAID management</span><span class="chip">Vendor management</span><span class="chip">Contract negotiation</span><span class="chip">Agile delivery</span><span class="chip">Azure DevOps</span><span class="chip">CI/CD</span><span class="chip">Stakeholder management</span></div>
         </div>
       </article>
       <article class="job reveal">
-        <div class="job-meta"><span class="caption-4 dim">2021 – 2025</span><span class="title-3">Digineox Consulting</span><span class="body-6 dim">Houston, TX</span></div>
+        <div class="job-meta"><span class="caption-4 dim">Oct 2021 – Feb 2025</span><span class="title-3">Digineox</span><span class="body-6 dim">Houston, TX · Hybrid</span></div>
         <div class="job-body">
           <h3 class="heading-6">Senior Manager, Digital Transformation</h3>
-          <ul class="points body-6">
-            <li>Directed enterprise IT and OT initiatives for midstream oil &amp; gas clients: terminal operations, enterprise asset management and ERP modernization.</li>
-            <li>Integrated Hexagon EAM with SAP and Coupa, reducing corrective work orders by 20%.</li>
-            <li>Automated railcar arrivals and departures through the Union Pacific API, reducing planner effort by 35%.</li>
-          </ul>
+          <div class="blurb body-6 muted">
+            <p>I led digital transformation engagements in liquid terminal storage and transport, bridging business strategy, enterprise technology and operational excellence. Working closely with client leadership, I directed a portfolio of IT and OT initiatives for midstream oil &amp; gas clients covering terminal operations, enterprise asset management and ERP modernization within an Agile framework.</p>
+            <p>I led integrations that pulled SCADA and HMI data into SAP and connected Honeywell Terminal Manager for rail, truck and marine scheduling. I deployed Class 1 Division 2 field tablets for paperless rail and marine operations, cutting spotting time by 20%, and automated railcar arrivals and departures through the Union Pacific API, reducing planner effort by 35%. Integrating Hexagon EAM with SAP and Coupa reduced corrective work orders by 20%, and predictive maintenance models increased MTBF by 50% (from 1,000 to 1,500 hours) and reduced downtime by 20%.</p>
+            <p>I managed scope, schedule, budget and risk for capital OT projects, reporting to the VP Operations through KPI dashboards on cost, schedule and compliance. I reduced MRO spend by 15%, automated PR/PO processes and improved safety and regulatory compliance ratings. I increased billing by $300K per year through accurate SAP documentation of post delivery railcar storage and ancillary services such as nitrogen blanketing and flaring. I also led organizational change management, stakeholder communications and training programs to drive adoption across field and corporate operations.</p>
+          </div>
+          <div class="chips caption-4 job-skills"><span class="chip">IT/OT integration</span><span class="chip">SAP</span><span class="chip">Honeywell Terminal Manager</span><span class="chip">Hexagon EAM</span><span class="chip">SCADA/HMI</span><span class="chip">API integration</span><span class="chip">Predictive maintenance</span><span class="chip">Capital project management</span><span class="chip">KPI dashboards</span><span class="chip">Organizational change management</span></div>
         </div>
       </article>
       <article class="job reveal">
-        <div class="job-meta"><span class="caption-4 dim">2013 – 2021</span><span class="title-3">Alberta Blue Cross</span><span class="body-6 dim">Edmonton, AB</span></div>
+        <div class="job-meta"><span class="caption-4 dim">May 2013 – Oct 2021</span><span class="title-3">Alberta Blue Cross</span><span class="body-6 dim">Edmonton, AB</span></div>
         <div class="job-body">
           <div class="role">
-            <h3 class="heading-6">Manager, Business Support</h3>
-            <span class="caption-4 dim">2018 – 2021</span>
-            <ul class="points body-6">
-              <li>Led healthcare technology initiatives across health, dental, drug, life and benefits platforms with a team of 30 business analysts, QA analysts, developers and architects.</li>
-              <li>Served as Business Relationship Manager to senior executives across the Health, Dental, Pharmacy and Life business units.</li>
-            </ul>
+            <h3 class="heading-6">Business Support Manager</h3>
+            <span class="caption-4 dim">Aug 2018 – Oct 2021 · Hybrid</span>
+            <div class="blurb body-6 muted">
+              <p>As Business Relationship Manager, I provided enterprise technology leadership in a complex healthcare and insurance environment, connecting business strategy with technology delivery. I partnered with senior executives in the Health, Dental, Pharmacy and Life business units to identify priorities, define technology roadmaps and align digital solutions with business and customer experience goals.</p>
+              <p>I led a multidisciplinary team of 30 business analysts, QA analysts, developers and architects supporting health, dental, drug, life and benefits administration platforms. I managed end to end delivery including scope, schedules, budgets, resources, risks, dependencies and vendor coordination, with executive dashboards for data driven decisions, and directed Agile practices from backlog management and sprint planning to stakeholder workshops.</p>
+              <p>I applied DMAIC principles for continuous improvement across claims administration and healthcare operations, managed vendors through RFx processes, contract negotiation and SLA governance, and served on governance committees for project oversight and strategic planning. I brought Voice of the Customer feedback into member facing digital solutions, and supported the implementation of Alberta's COVID-19 vaccination program in under two weeks with the Pharmacy and Claims teams.</p>
+            </div>
+            <div class="chips caption-4 job-skills"><span class="chip">Business relationship management</span><span class="chip">Technology roadmaps</span><span class="chip">Team leadership</span><span class="chip">Agile delivery</span><span class="chip">DMAIC</span><span class="chip">Vendor management</span><span class="chip">RFx and SLA governance</span><span class="chip">Voice of the Customer</span><span class="chip">Healthcare and insurance</span></div>
           </div>
           <div class="role">
-            <h3 class="title-2">Manager, Enterprise Services Business &amp; Applications</h3>
-            <span class="caption-4 dim">2015 – 2018</span>
-            <ul class="points body-6">
-              <li>Managed enterprise Sales and Finance application portfolios supporting a $125M Oracle ERP implementation.</li>
-            </ul>
+            <h3 class="heading-6">Enterprise Business Manager</h3>
+            <span class="caption-4 dim">Sep 2015 – Aug 2018 · On site</span>
+            <div class="blurb body-6 muted">
+              <p>I managed the enterprise Sales and Finance application portfolios supporting a $125M Oracle ERP implementation, and led delivery teams responsible for healthcare application projects, production support and defect remediation. I managed annual budgets, resource planning, project prioritization and portfolio reporting, and supported organizational change management for the enterprise technology transformation.</p>
+              <p>I represented my business unit on governance and innovation committees responsible for technology investments, and improved member privacy and security through enhancements to enterprise Identity and Access Management (IAM) and Role Based Access Control (RBAC).</p>
+            </div>
+            <div class="chips caption-4 job-skills"><span class="chip">Oracle ERP</span><span class="chip">Application portfolio management</span><span class="chip">Budgeting and resource planning</span><span class="chip">Production support</span><span class="chip">IAM and RBAC</span><span class="chip">Organizational change management</span><span class="chip">IT governance</span></div>
           </div>
           <div class="role">
-            <h3 class="title-2">Senior Business Analyst</h3>
-            <span class="caption-4 dim">2013 – 2015</span>
-            <ul class="points body-6">
-              <li>Delivered process improvements that reduced software production costs by 20% and software defects by 30%.</li>
-            </ul>
+            <h3 class="heading-6">Senior Business Analyst</h3>
+            <span class="caption-4 dim">May 2013 – Sep 2015 · On site</span>
+            <div class="blurb body-6 muted">
+              <p>I led business analysis through the SDLC for a major enterprise healthcare administration system, facilitating workshops, documenting business processes, and developing use cases and functional specifications. I coordinated cross functional teams to prioritize work, manage dependencies and improve operational efficiency, and supported testing strategy, UAT planning, production implementation and post production support. My process improvements reduced software production costs by 20% and software defects by 30%.</p>
+            </div>
+            <div class="chips caption-4 job-skills"><span class="chip">Business analysis</span><span class="chip">Requirements and use cases</span><span class="chip">Process mapping</span><span class="chip">SDLC</span><span class="chip">UAT and testing strategy</span><span class="chip">Workshop facilitation</span></div>
           </div>
         </div>
       </article>
       <article class="job reveal">
-        <div class="job-meta"><span class="caption-4 dim">2005 – 2013</span><span class="title-3">Virtual Communications</span><span class="body-6 dim">Murphy, TX</span></div>
+        <div class="job-meta"><span class="caption-4 dim">Jan 2005 – May 2013</span><span class="title-3">Virtual Communications</span><span class="body-6 dim">Murphy, TX · Hybrid</span><span class="body-6 dim">Self employed</span></div>
         <div class="job-body">
           <h3 class="heading-6">Director and Program Manager</h3>
-          <ul class="points body-6">
-            <li>Established a call center for major telecom providers, executive concierge services and medical transcription for doctors.</li>
-            <li>Developed digital health and telemedicine solutions with hospitals, including remote consultations and live surgical broadcasts.</li>
-            <li>Provided software development and IT consulting for clients including Microsoft, Dell, LG and Tetra Pak, through marketing and technology partners.</li>
-          </ul>
+          <div class="blurb body-6 muted">
+            <p>I founded and self financed a technology and business services company delivering solutions across telecommunications, contact centers, telemedicine and digital health, combining entrepreneurial leadership with technology consulting, program delivery and customer engagement.</p>
+            <p>I managed inbound and outbound contact center operations for major U.S., UK and Canadian telecom companies, covering customer support, telemarketing, virtual assistance, customer surveys and retention. With hospitals and medical organizations, I developed telemedicine and digital health solutions for remote consultations, interactive continuing medical education and live transmission of surgical procedures to remote audiences. I launched an anonymous, IVR driven toll free HIV helpline; a 24/7/365 medical advice hotline that routed callers to medical students and escalated to physicians when needed; and universal access numbers that let patients reach physicians across multiple practice locations through a single number.</p>
+            <p>I also provided bespoke software development and IT consulting to local and multinational organizations, partnered with marketing and technology firms on engagements involving Microsoft, Dell, LG and Tetra Pak, and led digital marketing across social media, SEO, surveys, webinars, roadshows and product launches. A sustainability focused web portal I developed for the recycling community was selected for TechCrunch50 (2009) and won the Marriott Small Business Challenge for design and functionality.</p>
+          </div>
+          <div class="chips caption-4 job-skills"><span class="chip">Entrepreneurship</span><span class="chip">Contact center operations</span><span class="chip">Telemedicine</span><span class="chip">IVR and call routing</span><span class="chip">Software development</span><span class="chip">IT consulting</span><span class="chip">Digital marketing and SEO</span><span class="chip">Strategic partnerships</span></div>
         </div>
       </article>
-      <div class="earlier reveal">
-        <span class="caption-3 dim">Earlier</span>
-        <span class="body-6 muted">T-Mobile Franchise Owner, Cell Phones Etc. · 2002 – 2004</span>
-        <span class="body-6 muted">CRM Consultant, PricewaterhouseCoopers LLP · 1998 – 2001</span>
-      </div>
+      <article class="job reveal">
+        <div class="job-meta"><span class="caption-4 dim">Sep 2002 – Dec 2004</span><span class="title-3">T-Mobile · Cell Phones, Etc.</span><span class="body-6 dim">Lewisville, TX</span><span class="body-6 dim">Self employed</span></div>
+        <div class="job-body">
+          <h3 class="heading-6">T-Mobile Franchisee</h3>
+          <div class="blurb body-6 muted">
+            <p>I established and operated a T-Mobile franchise, overseeing the business from commercial strategy through day to day operations. The franchise represented major U.S. carriers including T-Mobile, AT&amp;T, Sprint PCS and Verizon, and I was responsible for sales, customer experience, operational execution and business financials. The business was later sold so I could start my next entrepreneurial venture.</p>
+            <p>I analyzed sales performance, customer acquisition costs, revenue per user, retention and churn to guide marketing spend, sales strategy, product mix and growth decisions, and evaluated customer decision journeys across retail and assisted service channels to improve conversion and lifetime customer value. In partnership with corporate, I led customer experience initiatives using journey mapping, surveys and feedback analysis, and extended engagement beyond retail by establishing a customer service and retention call center handling inquiries, issue resolution, renewals and cross selling.</p>
+          </div>
+          <div class="chips caption-4 job-skills"><span class="chip">P&amp;L ownership</span><span class="chip">Sales strategy</span><span class="chip">Customer analytics</span><span class="chip">Customer journey mapping</span><span class="chip">Voice of the Customer</span><span class="chip">Retention and churn</span><span class="chip">Contact center operations</span></div>
+        </div>
+      </article>
+      <article class="job reveal">
+        <div class="job-meta"><span class="caption-4 dim">Feb 1998 – Jun 2001</span><span class="title-3">PricewaterhouseCoopers</span><span class="body-6 dim">Chicago, IL · On site</span></div>
+        <div class="job-body">
+          <h3 class="heading-6">CRM Consultant</h3>
+          <div class="blurb body-6 muted">
+            <p>I worked in PwC's Management Consulting Services CRM practice, delivering enterprise technology and business transformation engagements for major telecommunications and technology organizations, gaining broad experience across CRM, contact center solutions, enterprise infrastructure and business systems.</p>
+            <p>I delivered CRM implementation initiatives for Ameritech in Chicago, and coordinated call center deployments for Sprint across Dallas and Kansas City, aligning landline and mobile billing and customer support operations. I implemented data center initiatives with Equinix and Cisco in San Jose, delivered a workforce management system for Level 3 Communications in Boulder, and supported a call center deployment for Chicago's 911 emergency dispatch operations in collaboration with AT&amp;T.</p>
+          </div>
+          <div class="chips caption-4 job-skills"><span class="chip">CRM implementation</span><span class="chip">Management consulting</span><span class="chip">Call center solutions</span><span class="chip">Data center delivery</span><span class="chip">Workforce management systems</span><span class="chip">Business process transformation</span></div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
