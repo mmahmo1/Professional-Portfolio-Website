@@ -161,9 +161,10 @@
   .cert svg{width:24px;height:24px;flex:none;color:var(--muted)}
   .cert.progress{border-color:rgba(232,176,75,0.35)}
   .cert.progress svg{color:var(--accent)}
-  .pill-progress{display:inline-flex;margin-top:var(--s75);padding:var(--s25) var(--s75);border-radius:9999px;color:var(--accent);border:1px solid rgba(232,176,75,0.4)}
+  .pill-progress{display:inline-flex;align-self:flex-start;margin-top:var(--s75);padding:var(--s25) var(--s75);border-radius:9999px;color:var(--accent);border:1px solid rgba(232,176,75,0.4)}
   .cert-body{display:flex;flex-direction:column;gap:var(--s25)}
-  .edu{display:grid;grid-template-columns:1fr 1fr;gap:var(--s200);margin-top:var(--s200)}
+  .cert-grid{grid-auto-rows:1fr}
+  .edu{margin-top:var(--s600)}
 
   /* Skills */
   .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s200)}
@@ -544,21 +545,13 @@
       <h2 class="heading-3">Certifications and education</h2>
     </div>
     <div class="cert-grid">
-      <div class="cert progress reveal">
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        <div class="cert-body"><span class="title-3">Cognitive Project Management for AI (CPMAI)</span><span class="body-6 dim">PMI</span><span class="pill-progress caption-4">In progress</span></div>
-      </div>
-      <div class="cert progress reveal">
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        <div class="cert-body"><span class="title-3">FAA Part 107 Remote Pilot</span><span class="body-6 dim">Federal Aviation Administration</span><span class="pill-progress caption-4">In progress</span></div>
+      <div class="cert reveal">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M8 12.5l2.5 2.5L16 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="cert-body"><span class="title-3">Certified Scrum Master (CSM)</span><span class="body-6 dim">Scrum Alliance</span></div>
       </div>
       <div class="cert reveal">
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M8 12.5l2.5 2.5L16 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <div class="cert-body"><span class="title-3">Certified Scrum Master (CSM)</span></div>
-      </div>
-      <div class="cert reveal">
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M8 12.5l2.5 2.5L16 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <div class="cert-body"><span class="title-3">Lean Six Sigma Green Belt (LSSGB)</span></div>
+        <div class="cert-body"><span class="title-3">Lean Six Sigma Green Belt (LSSGB)</span><span class="body-6 dim">NAIT</span></div>
       </div>
       <div class="cert reveal">
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M8 12.5l2.5 2.5L16 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -582,10 +575,18 @@
       </div>
       <div class="cert reveal">
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M8 12.5l2.5 2.5L16 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <div class="cert-body"><span class="title-3">Business Intelligence &amp; Analytics</span></div>
+        <div class="cert-body"><span class="title-3">Business Intelligence &amp; Analytics</span><span class="body-6 dim">NAIT</span></div>
+      </div>
+      <div class="cert progress reveal">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div class="cert-body"><span class="title-3">Certified Professional in Managing AI (CPMAI)</span><span class="body-6 dim">PMI</span><span class="pill-progress caption-4">In progress</span></div>
+      </div>
+      <div class="cert progress reveal">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div class="cert-body"><span class="title-3">FAA Part 107 Remote Pilot</span><span class="body-6 dim">Federal Aviation Administration</span><span class="pill-progress caption-4">In progress</span></div>
       </div>
     </div>
-    <div class="edu">
+    <div class="cert-grid edu">
       <div class="cert reveal">
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5L2 9z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M6 11v5c0 1 2.7 3 6 3s6-2 6-3v-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         <div class="cert-body"><span class="title-3">MBA, Entrepreneurship &amp; Digital Marketing</span><span class="body-6 dim">University of Illinois at Urbana Champaign · 2022</span></div>
