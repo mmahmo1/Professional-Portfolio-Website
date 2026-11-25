@@ -112,6 +112,7 @@
   .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s700)}
   .about-grid .section-head{margin-bottom:0}
   .about-side{display:flex;flex-direction:column;gap:var(--s400)}
+  .about-side .facts{margin-top:auto}
   .about-text{display:flex;flex-direction:column;gap:var(--s300)}
   .facts{display:flex;flex-direction:column;gap:var(--s100)}
   .fact{display:flex;gap:var(--s200);padding:var(--s200) var(--s300);border:1px solid var(--line);border-radius:16px;background:var(--surface)}
@@ -204,6 +205,11 @@
     .hero-grid{grid-template-columns:1fr}
     .stats{grid-template-columns:repeat(2,1fr)}
     .about-grid{grid-template-columns:1fr;gap:var(--s400)}
+    .about-side{display:contents}
+    .about-side .section-head{order:1}
+    .about-side .photo{order:2}
+    .about-text{order:3}
+    .about-side .facts{order:4;margin-top:0}
     .principles,.projects,.cert-grid{grid-template-columns:1fr 1fr}
     .job{grid-template-columns:1fr;gap:var(--s200)}
   }
@@ -241,10 +247,7 @@
     <li><a href="#projects">Projects</a></li>
     <li><a href="#certifications">Certifications</a></li>
     <li><a href="#contact">Contact</a></li>
-    <!-- CALENDLY: replace with <li><a href="YOUR_CALENDLY_LINK" target="_blank" rel="noopener">Book</a></li> -->
-    <li><span class="is-soon" aria-disabled="true" title="Calendly link coming soon">Book</span></li>
   </ul>
-  <a class="btn btn-primary button-sm" href="mailto:mmahmo1@gmail.com">Email me</a>
   <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
 </nav>
 <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
@@ -254,9 +257,6 @@
   <a class="heading-4" href="#projects">Projects</a>
   <a class="heading-4" href="#certifications">Certifications</a>
   <a class="heading-4" href="#contact">Contact</a>
-  <!-- CALENDLY: replace with <a class="heading-4" href="YOUR_CALENDLY_LINK" target="_blank" rel="noopener">Book</a> -->
-  <span class="heading-4 is-soon" aria-disabled="true">Book <span class="caption-4">soon</span></span>
-  <a class="btn btn-primary button-md" href="mailto:mmahmo1@gmail.com">Email me</a>
 </div>
 
 <main id="main">
@@ -293,6 +293,12 @@
         <div class="photo">
           <img src="photo.jpg" alt="Portrait of Hassan Mahmood" width="715" height="1003">
         </div>
+        <div class="facts">
+          <div class="fact"><span class="caption-3 dim">Industries</span>
+            <ul class="fact-list body-6"><li>Healthcare</li><li>Insurance</li><li>Energy</li><li>Midstream oil &amp; gas</li><li>Logistics</li><li>Telecommunications</li></ul></div>
+          <div class="fact"><span class="caption-3 dim">Work</span>
+            <ul class="fact-list body-6"><li>Authorized to work in the US and Canada</li><li>TWIC holder (unescorted access to maritime facilities)</li><li>Available for remote work or on-site in Houston and Dallas, TX</li><li>100% open to travel</li></ul></div>
+        </div>
       </div>
       <div class="about-text reveal">
         <p class="body-3 muted">I'm an entrepreneur and a business leader with over 20 years of experience helping organizations navigate complex challenges, transform operations, and turn strategic ideas into measurable business outcomes using technology solutions.</p>
@@ -301,12 +307,6 @@
         <p class="body-3 muted">What has consistently defined my approach is the ability to understand the bigger picture while remaining grounded in execution. I enjoy bringing structure to complex situations, connecting people with different perspectives, building consensus, and helping teams move from uncertainty to meaningful progress.</p>
         <p class="body-3 muted">Over the years, I've had the opportunity to lead diverse teams, advise senior executives, work with clients and vendors, and deliver initiatives that improve operational efficiency, strengthen business capabilities, and create lasting value. I enable large transformation with a focus on Organizational Change Management.</p>
         <p class="body-3 muted">My management style is collaborative and inclusive. I focus on building cross-functional buy-in and leading through influence to move complex initiatives forward. At the heart of what I do is a simple philosophy, to build trust, bring clarity to complexity, and empower people.</p>
-        <div class="facts">
-          <div class="fact"><span class="caption-3 dim">Industries</span>
-            <ul class="fact-list body-6"><li>Healthcare</li><li>Insurance</li><li>Energy</li><li>Midstream oil &amp; gas</li><li>Logistics</li><li>Telecommunications</li></ul></div>
-          <div class="fact"><span class="caption-3 dim">Work</span>
-            <ul class="fact-list body-6"><li>Authorized to work in the US and Canada</li><li>TWIC holder (unescorted access to maritime facilities)</li><li>Available for remote work or on-site in Houston and Dallas, TX</li><li>100% open to travel</li></ul></div>
-        </div>
       </div>
     </div>
   </div>
