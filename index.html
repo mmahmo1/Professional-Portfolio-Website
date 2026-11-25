@@ -111,6 +111,10 @@
   .facts{display:flex;flex-direction:column;gap:var(--s100)}
   .fact{display:flex;gap:var(--s200);padding:var(--s200) var(--s300);border:1px solid var(--line);border-radius:16px;background:var(--surface)}
   .fact .caption-3{min-width:96px;padding-top:2px}
+  .fact-list{display:flex;flex-direction:column;gap:var(--s50)}
+  .fact-list li{position:relative;padding-left:var(--s200)}
+  .fact-list li::before{content:"";position:absolute;left:2px;top:8px;width:4px;height:4px;border-radius:9999px;background:var(--muted)}
+  .about-side .photo img{filter:grayscale(1)}
 
   /* Philosophy / tagline reveal */
   .tagline{padding:var(--s900) 0}
@@ -269,20 +273,25 @@
       <div class="about-side reveal">
         <div class="section-head">
           <span class="caption-3 eyebrow">About</span>
-          <h2 class="heading-3">Where business strategy, technology and people meet</h2>
+          <h2 class="heading-3">Where business strategy, technology, and people meet</h2>
         </div>
         <div class="photo">
           <img src="photo.jpg" alt="Portrait of Hassan Mahmood" width="715" height="1003">
         </div>
       </div>
       <div class="about-text reveal">
-        <p class="body-3 muted">I'm an entrepreneur and business leader with over 20 years of experience helping organizations navigate complex challenges, transform operations, and turn strategic ideas into measurable business outcomes using technology solutions.</p>
-        <p class="body-3 muted">My experience spans energy, healthcare, insurance, telecommunications and professional services. I've led initiatives involving enterprise applications, digital transformation, business process optimization, systems integration, technology governance and organizational change.</p>
-        <p class="body-3 muted">What has consistently defined my approach is the ability to understand the bigger picture while staying grounded in execution. I enjoy bringing structure to complex situations, connecting people with different perspectives, building consensus, and helping teams move from uncertainty to meaningful progress.</p>
+        <p class="body-3 muted">I'm an entrepreneur and a business leader with over 20 years of experience helping organizations navigate complex challenges, transform operations, and turn strategic ideas into measurable business outcomes using technology solutions.</p>
+        <p class="body-3 muted">Throughout my career, I've worked at the intersection of business strategy, technology, and people, leading transformation initiatives, managing enterprise projects, building high-performing teams, and developing strong relationships with executives, stakeholders, clients, and technology partners.</p>
+        <p class="body-3 muted">My experience spans multiple industries, including energy, healthcare, insurance, telecommunications, and professional services. I've led initiatives involving enterprise applications, digital transformation, business process optimization, systems integration, technology governance, and organizational change.</p>
+        <p class="body-3 muted">What has consistently defined my approach is the ability to understand the bigger picture while remaining grounded in execution. I enjoy bringing structure to complex situations, connecting people with different perspectives, building consensus, and helping teams move from uncertainty to meaningful progress.</p>
+        <p class="body-3 muted">I believe successful transformation is rarely just about technology. It's about understanding business needs, earning people's trust, challenging conventional thinking, and creating an environment where people can work together toward a common goal.</p>
+        <p class="body-3 muted">Over the years, I've had the opportunity to lead diverse teams, advise senior executives, work with clients and vendors, and deliver initiatives that improve operational efficiency, strengthen business capabilities, and create lasting value. I enable large transformation with a focus on Organizational Change Management.</p>
+        <p class="body-3 muted">My management style is collaborative and inclusive. I focus on building cross-functional buy-in and leading through influence to move complex initiatives forward. At the heart of what I do is a simple philosophy, to build trust, bring clarity to complexity, and empower people.</p>
         <div class="facts">
-          <div class="fact"><span class="caption-3 dim">Now</span><span class="body-6">Director, IT Programs at Indigo Beam (Airiam)</span></div>
-          <div class="fact"><span class="caption-3 dim">Industries</span><span class="body-6">Healthcare and health insurance, energy and midstream oil &amp; gas, logistics, telecommunications</span></div>
-          <div class="fact"><span class="caption-3 dim">Work</span><span class="body-6">Available for remote work or on site in Houston and Dallas, TX. Authorized to work in the US and Canada. TWIC holder.</span></div>
+          <div class="fact"><span class="caption-3 dim">Industries</span>
+            <ul class="fact-list body-6"><li>Healthcare</li><li>Insurance</li><li>Energy</li><li>Midstream oil &amp; gas</li><li>Logistics</li><li>Telecommunications</li></ul></div>
+          <div class="fact"><span class="caption-3 dim">Work</span>
+            <ul class="fact-list body-6"><li>Authorized to work in the US and Canada</li><li>TWIC holder (unescorted access to maritime facilities)</li><li>Available for remote work or on-site in Houston and Dallas, TX</li><li>100% open to travel</li></ul></div>
         </div>
       </div>
     </div>
